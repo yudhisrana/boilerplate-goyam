@@ -22,20 +22,20 @@ Boilerplate ini dirancang untuk membantu Anda memulai proyek Go dengan integrasi
 1. **Clone repository ini**:
 
     ```bash
-    git clone https://github.com/yourusername/boilerplate-goyam.git nama-proyek-anda
+    git clone https://github.com/yudhisrana/boilerplate-goyam.git nama-proyek-anda
     cd nama-proyek-anda
     ```
 
 2. **Inisialisasi Go module**
 
     ```bash
-    go mod edit -module=github.com/your-github/your-project
+    go mod edit -module=github.com/github-anda/nama-proyek-anda
     ```
 
     atau
 
     ```bash
-    go mod edit -module=your-project
+    go mod edit -module=nama-proyek-anda
     ```
 
     lalu jalankan
@@ -47,7 +47,7 @@ Boilerplate ini dirancang untuk membantu Anda memulai proyek Go dengan integrasi
 3. **Rubah Konfigurasi Database**
 
     ```
-    your-project/config.yaml
+    nama-proyek-anda/config.yaml
     ```
 
 4. **Jalankan Aplikasi**
