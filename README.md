@@ -29,19 +29,28 @@ Boilerplate ini dirancang untuk membantu Anda memulai proyek Go dengan integrasi
 2. **Inisialisasi Go module**
 
     ```bash
-    go mod init github.com/yourusername/nama-proyek-anda
+    go mod edit -module=github.com/your-github/your-project
+    ```
+
+    atau
+
+    ```bash
+    go mod edit -module=your-project
+    ```
+
+    lalu jalankan
+
+    ```bash
     go mod tidy
     ```
 
 3. **Rubah Konfigurasi Database**
-   Buka dan sesuaikan konfigurasi database pada file:
 
     ```
     your-project/config.yaml
     ```
 
 4. **Jalankan Aplikasi**
-   Jalankan aplikasi dengan perintah berikut:
     ```bash
     go run .\cmd\main.go
     ```
