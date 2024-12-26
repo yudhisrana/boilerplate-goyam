@@ -21,9 +21,5 @@
 go.work
 go.work.sum
 
-# folder empty
-apps/
-external/database/migrations
-
 # env file
 .env
