@@ -1,7 +1,7 @@
 /**
-this is a sample file migration
-you can use goose to migrate your database
-remove this file and add file you migration in this folder
+ini adalah contoh file migration
+kamu bisa menggunakan lib seperti goose untuk membuat migration
+hapus file ini karena ini adalah contoh
 **/
 
 -- +goose Up
