@@ -26,22 +26,11 @@ Boilerplate ini dirancang untuk membantu Anda memulai proyek Go dengan integrasi
     cd nama-proyek-anda
     ```
 
-2. **Inisialisasi Go module**
+2. **Setup Boilerplate**
 
     ```bash
-    go mod edit -module=github.com/github-anda/nama-proyek-anda
-    ```
-
-    atau
-
-    ```bash
-    go mod edit -module=nama-proyek-anda
-    ```
-
-    lalu jalankan
-
-    ```bash
-    go mod tidy
+    chmod +x setup.sh
+    ./setup.sh
     ```
 
 3. **Rubah Konfigurasi Database**
