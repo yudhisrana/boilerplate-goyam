@@ -1,0 +1,17 @@
+app:
+    name: 'Boilerplate Go YAML MYSQL' # app name
+    version: '1.0.0' # app version
+    port: '8080' # app port for api server (change it to your port)
+    secret_key: 'MySecretKey' # app secret key
+
+db:
+    host: 'localhost' # database host (change it to your database host)
+    port: '3306' # database port (change it to your database port)
+    user: 'root' # database user (change it to your database user)
+    password: '' # database password (change it to your database password)
+    database: '' # database name (change it to your database name)
+    db_connection:
+        max_idle_connections: 10 # max idle connections for database connection pool
+        max_open_connections: 30 # max open connections for database connection pool
+        conn_max_lifetime: 60 # max lifetime for database connection
+        conn_max_idle_time: 60 # max idle time for database connection
