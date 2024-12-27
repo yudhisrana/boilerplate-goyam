@@ -11,7 +11,7 @@ fi
 
 # Ganti nama module di seluruh file .go
 echo "Mengganti 'github.com/yudhisrana/boilerplate-goyam' dengan '$module_name' di semua file..."
-find . -type f -name "*.go" -exec sed -i "s/github.com\/yudhisrana\/boilerplate-goyam/$module_name/g" {} +
+find . -type f -name "*.go" -exec sed -i "s|github.com/yudhisrana/boilerplate-goyam|$module_name|g" {} +
 
 # Inisialisasi module baru
 echo "Inisialisasi go module dengan nama $module_name..."
