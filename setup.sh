@@ -18,4 +18,12 @@ echo "Inisialisasi go module dengan nama $module_name..."
 go mod init "$module_name"
 go mod tidy
 
+# Menghapus folder .git (menghilangkan git repository)
+echo "Menghapus repository Git (.git)..."
+rm -rf .git
+
+# Menghapus file setup.sh setelah selesai
+echo "Menghapus file setup.sh..."
+rm -- "$0"
+
 echo "Setup selesai!"
