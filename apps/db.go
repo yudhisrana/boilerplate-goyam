@@ -16,11 +16,11 @@ type Queries struct {
 	db DBTX
 }
 
-func New(db DBTX) *Queries {
+func New(db DBTX) (queries *Queries) {
 	return &Queries{db: db}
 }
 
-func (q *Queries) WithTx(tx *sql.Tx) *Queries {
+func (q *Queries) WithTx(tx *sql.Tx) (queries *Queries) {
 	return &Queries{
 		db: tx,
 	}
