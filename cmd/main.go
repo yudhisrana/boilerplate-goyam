@@ -19,10 +19,6 @@ func initDB() (db *sql.DB, err error) {
 }
 
 func main() {
-	fmt.Println("Terima kasih telah menggunakan boilerplate Go-YAML-MySQL ini!")
-	fmt.Println("Boilerplate ini dirancang untuk membantu Anda memulai proyek Go dengan integrasi MySQL dan konfigurasi YAML.")
-	fmt.Println("Silakan sesuaikan konfigurasi dan mulai mengembangkan aplikasi Anda!")
-
 	// init config
 	if err := initConfig(); err != nil {
 		log.Fatalf("\nerror initialize config: %s\n", err.Error())
@@ -38,5 +34,4 @@ func main() {
 	// main app
 	appName := config.Cfg.App.Name
 	fmt.Printf("aplikasi %s berhasil dijalankan\n", appName)
-
 }

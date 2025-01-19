@@ -1,4 +1,4 @@
-package apps
+package db
 
 import (
 	"context"

@@ -1,4 +1,4 @@
-package handlerErrors
+package errors
 
 import "errors"
 

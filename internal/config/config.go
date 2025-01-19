@@ -1,11 +1,10 @@
 package config
 
 import (
-	"fmt"
 	"os"
 
 	"github.com/stretchr/testify/assert/yaml"
-	"github.com/yudhisrana/boilerplate-goyam/internal/handlerErrors"
+	handlerErrors "github.com/yudhisrana/boilerplate-goyam/internal/errors"
 )
 
 type Config struct {
@@ -49,6 +48,5 @@ func LoadConfig(path string) (err error) {
 		return handlerErrors.ErrUnmarshalConfig
 	}
 
-	fmt.Printf("\nsuccess read config\n")
 	return nil
 }
