@@ -17,6 +17,7 @@ type AppConfig struct {
 	Version   string `yaml:"version"`
 	Port      string `yaml:"port"`
 	SecretKey string `yaml:"secret_key"`
+	Mode      string `yaml:"mode"`
 }
 
 type DBConfig struct {

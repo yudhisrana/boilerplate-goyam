@@ -3,6 +3,7 @@ app:
     version: '1.0.0' # app version
     port: '8080' # app port for api server (change it to your port)
     secret_key: 'MySecretKey' # app secret key
+    mode: 'dev' # 'dev' for development, 'prod' for production
 
 db:
     host: 'localhost' # database host (change it to your database host)
