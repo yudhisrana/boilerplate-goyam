@@ -7,14 +7,10 @@ import (
 	"github.com/yudhisrana/boilerplate-goyam/internal/config"
 )
 
-func initConfig() (err error) {
-	fileName := "config.yaml"
-	return config.LoadConfig(fileName)
-}
-
 func main() {
-	// init config
-	if err := initConfig(); err != nil {
+	// setup config
+	fileName := "config.yaml"
+	if err := config.LoadConfig(fileName); err != nil {
 		log.Fatalf("\nerror initialize config: %s\n", err.Error())
 	}
 
